@@ -255,16 +255,152 @@ Jenkins
 		Debian
 	8080 port
 
+===========================================
+How to connect
+	Physical
+		SSH
+		NETWORK
+	Virtual 
+		SSH
+		NETWORK
+	Container
+		BECOME
+		NETWORK
+===============================
+pull --> create -> Start --> Become 
+------------------------------------
+		RUN
+
+===============================
+pull --> create -> Start --> DO NOT Become 
+------------------------------------
+		RUN -d
 
 
+ 387  docker ps -a
+  388  clear
+  389  docker rm $(docker ps -a -q)
+  390  clear
+  391  docker ps -a
+  392  clear
+  393  docker run jenkins/jenkins
+  394  clear
+  395  id
+  396  ps
+  397  docker run jenkins/jenkins
+  398  clear
+  399  clear
+  400  docker run -d jenkins/jenkins
+  401  docker ps
+  402  docker ps -a
+  403  clear
+  404  ls
+  405  ps -eaf | grep containerd
+  406  docker run -d jenkins/jenkins
+  407  ps -eaf | grep containerd
+  408  clear
+  409  ls
+  410  id
+  411  ps
+  412  ps -eaf | grep 1885
+  413  ps -eaf | grep 1883
+  414  ps -eaf | grep 1864
+  415  ps -eaf | grep 1883
+  416  ps -eaf | grep 1864
+  417  ps -eaf | grep 1863
+  418  ps -eaf | grep 1413
+  419  ps -eaf | grep 1325
+  420  ps -eaf
+  421  clear
+  422  ls
+  423  ps -eaf | grep containerd
+  424  clear
+  425  ps -eaf
+  426  clear
+  427  docker ps
+  428  docker exec d8b2d7a44a96 ps -eaf
+  429  ps -eaf
+  430  clear
+  431  ls
+  432  docker ps
+  433  df -kh
+  434  ls
+  435  clear
+  436  ls /var/lib/docker/overlay2/c13f6924b264c6f8d4e553c21f476bab02065123163257d92baccf4b95d7ac43/merged
+  437  docker ps
+  438  docker exec d8b2d7a44a96 ls /
+  439  docker exec d8b2d7a44a96 df -kh
+  440  clear
+  441  ls
+  442  docker ps
+  443  docker inspect d8b2d7a44a96
+  444  ping 172.17.0.3
+  445  ping 172.17.0.2
+  446  ping 172.17.0.4
+  447  history
+
+==========================================================================================
+==========================================================================================
+Physcial Server 	Virutal Server 			Container is running
+is RUNNING 		is RUNNING			is RUNNING
+As long as		As long as 			As long as 
+PID 1 RUNNING 		PID 1 RUNNING 			PID 1 RUNNING 
+
+PID 1 is SYSTEMD	PID 1 is SYSTEMD		PID 1 is ANYTHING
+							Perl
+							Pythin
+							Java
+							/bin/bash
+=========================================================================
+  449  ps -eaf
+  450  clear
+  451  docker ps
+  452  docker exec d8b2d7a44a96 ps -eaf
+  453  docker exec d8b2d7a44a96 kill 1
+  454  docker ps
+  455  docker ps -a
+
+==================================================
+How to access a container
+- Go inside a container
+	--- EXEC	
+			Will Execute an Executables INSIDE A container
+			but Human can Interact with container with -it and shell(bash)
+	--- Attach
+			you can become or attached to a process of PID1
+
+456  history
+  457  clear
+  458  docker ps
+  459  docker exec 7bdf6f971d89 ls
+  460  docker exec 7bdf6f971d89 ps
+  461  clear
+  462  docker exec 7bdf6f971d89 df -kh
+  463  docker exec 7bdf6f971d89 dffff
+  464  clear]
+  465  clesr
+  466  clear
+  467  docker ps
+  468  docker exec -it 7bdf6f971d89 /bin/bash
+  469  docker ps
+  470  clear
+  471  docker ps
+  472  docker attach 7bdf6f971d89
+  473  docker ps
+  474  history
 
 
-
-
-
-
-
-
+- Access from outside of a container
+  482  docker inspect d8b2d7a44a96
+  483  clear
+  484  ping 172.17.0.2
+  485  curl http://172.17.0.2:8080
+  486  clear
+  487  docker ps
+  488  docker run -d -p 8080:8080 jenkins/jenkins
+  489  docker ps
+=============================================
+IP _ 13.235.113.166
 
 
 
