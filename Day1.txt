@@ -1,0 +1,290 @@
+-------------------------
+4 Days - DevSecOps
+-------------------------
+Agenda
+-----------------------
+Docker		HALF
+SonarQube	HALF
+
+Jenkins		ONE
+
+Selenium	HALF
+Jmeter		HALF
+
+Jacoco		HALF
+DevSecOps 	- THEoRY	HALF
+===============================
+9:30 AM  - 6:00 PM
+===============================
+Lunch - 1:00 - 2:00 
+BREAK - 
+	15mins
+	11.30
+	4.00
+===================================
+===================================
+What is Docker?
+-----------------------------------
+	Container mgmt tool/platform
+	Release
+		Community
+		Enterprise
+		https://www.devopsschool.com/blog/
+	Version
+		20.X
+	Written in Golang
+	By SOloman hykes
+	
+
+mgmt ---? 
+tool
+	Save time
+	Save Cost
+	Improve Quality
+	-------------------------------
+		to RUN app(s) in DATACENTER
+
+What is Container?
+-------------------------------------
+a lightweight APP runtime independent env
+
+is a ONE USER NS 
+		attached to 
+				ONE NET NS
+				ONE PID NS 
+				ONE MNT NS
+
+MNT
+-------------------
+FILESYSTEM
+	a collections of file/dir with one objective
+
+TYPES
+	BOOT FILESYSTEM	 - KERNAL
+	ROOT 	= CONTAINER 	=== UBUNTU = REDHAT = FEDORA
+	USER	= CONTAINER
+	APP	= CONTAINER
+
+
+What r the Resources we NEED to run APP?
+----------------------------------------
+HARDWARE
+	OS
+	  Kernel
+		Namespace
+				ALLOWED		CAN		NEED
+			MOUNT	1		MULTIPLE	ONE
+			PID MAP	1		MULTIPLE	ONE	
+			USER	MULTIPLE	MULTIPLE	ONE
+			NETWORK	1		MULTIPLE	ONE
+			
+		Cgroups		- Assign CPU and RAM to PID
+		Capbilities	- Decide you are ROOT or Not root.
+
+
+
+			ONE APP
+			- Filesystem
+		  	- ONE PID for Allocating a CPU and RAM
+			- ONE USER
+	   		- Network
+Kernel		
+The kernel is a computer program at the core of a computer's operating system that has complete control over everything in the system.
+
+=========================================================================
+Evolution of Computing?
+-------------------------------------------------------------------------
+PHYSICAL SERVER		Virtual Server		Container
+---------------------------------------------------------------------
+		Internet
+HARDWARE
+
+=================================================================
+PC = PERSONAL COMPUTING
+Why We need it?
+
+How docker works? Docker Architecture!!
+========================================================
+Human -> Docker Client -----REST----> Docker Server -> ContainerD -> Kernal
+        ==========================================
+			Docker Engine
+
+Other tools
+https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
+
+Components of Docker
+- Docker Engine			DONE
+- Docker Image
+	VM Image
+	-------------------
+	BOOT FS
+	ROOT FS
+	USER FS
+	AP FS
+
+	DOCKER Image
+	-------------------
+	ROOT FS
+	USER FS
+	APP FS
+
+	ONE COPY OF IMAGE - GET MOUNTED IN EACH CONTAINER
+	ONE IMAGE - yOu can create as many container.
+
+Docker Registry
+	Repository
+		VERSION OF FILESYSTEM
+			ROOT FS
+			USER FS
+			APP FS
+
+	Public
+		docker hub
+		google registry
+		Azure Registry
+	Pvt
+		Artifactory
+		nexus
+
+Docker Container
+	When we RUN Docker Image using Docker Client.
+	        ---
+
+		Create ONE USER
+		Create ONE NET
+		CREATE ONE PID 
+		CEATE ONE MOUNT FROM DOCKER IAMGE
+
+		ATTACH NET + PID + MOUNT TO USER
+		================================
+			Container
+
+
+How to work with Docker? Docker Work flow
+===============================================
+Human -> Docker Client -----REST----> Docker Server 
+
+				CHECK IF IMAGE EXIST in SAME MACHINE
+				YES  -- -> ContainerD -> Kernal
+
+				NO - Download from HUB + -> ContainerD -> Kernal
+
+VMS LifeCYCLE
+-----------------------------------------------------
+create -> Start -> STOP -> START -> RESTART -> PAUSE -> Unpause -> KILL -> Remove
+
+
+Container LifeCYCLE
+-----------------------------------------------------
+create -> Start -> STOP -> START -> RESTART -> PAUSE -> Unpause -> KILL -> Remove
+
+13.127.224.4
+UserName - centos
+Password - centos123
+
+$ sudo -s
+
+    9  docker version
+   10  clear
+   11  docker info
+   12  docker v
+   13  docker -v
+   14  docker help
+   15  clear
+   16  history
+
+ 15  clear
+   16  history
+   17  clear
+   18  docker images
+   19  docker ps
+   20  docker ps -a
+   21  docker pull jenkins/jenkins
+   22  clear
+   23  docker images
+   24  clear
+   25  dokcer images
+   26  docker images
+   27  docker create jenkins/jenkins
+   28  docker ps
+   29  docker ps -a
+   30  docker ps -a
+   31  docker create jenkins/jenkins
+   32  clear
+   33  docker ps -a
+   34  docker start 2bc3f0fad4a5
+   35  docker ps -a
+   36  docker stop 2bc3f0fad4a5
+   37  docker ps -a
+   38  clear
+   39  docker ps -a
+   40  docker start 2bc3f0fad4a5
+   41  docker ps -a
+   42  docker restart 2bc3f0fad4a5
+   43  docker ps -a
+   44  clear
+   45  docker pause 2bc3f0fad4a5
+   46  docker ps -a
+   47  docker unpause 2bc3f0fad4a5
+   48  docker ps -a
+   49  clear
+   50  docker kill 2bc3f0fad4a5
+   51  docker ps -a
+   52  docker rm 2bc3f0fad4a5
+   53  docker ps -a
+   54  docker create jenkins/jenkins
+   55  clear
+   56  docker ps -a
+   57  docker start a03dbea7efbd
+   58  docker start a03dbea7efbd 036cf5155415
+   59  docker ps -a
+   60  docker stop a03dbea7efbd 036cf5155415
+   61  clear
+   62  docker start a03dbea7efbd 036cf5155415
+   63  clear
+   64  docker ps -a
+
+
+How to install it?
+https://devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+
+Jenkins
+	WEB BASED TOOL
+	JAVA
+		Debian
+	8080 port
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
