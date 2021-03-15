@@ -403,6 +403,114 @@ How to access a container
 IP _ 13.235.113.166
 
 
+=============================================================
+=============================================================
+What is SonarQube?
+-----------------------
+	Quality mgmt tool
+	Release
+	- Community
+	- Devloper
+	- Enterprise
+	- Data Center
+	https://www.sonarqube.org/downloads/
+	Written in JAVA
+	Version 8.X
+	From SonarSource
+	
+
+What is Quality?
+	- Code Quality & Security
+		Peer Code Review	- Manual -- Human
+		Static Code Review - Automated -- Tool
+	- Test Quality
+
+Why Sonarqube?
+-----------------
+	ALL SCA Tools
+	ALL REPORTS
+	W - W - W - H -
+	Centralized 
+	Track a Project Progress
+			Quality
+
+Sonarqube Architecture
+==============================
+Sonarqube Server			DONE
+		Rules
+		Dashboard
+		DB
+			ANY RDBMS
+
+Laptop
+----------
+SourceCode				DONE
+Sonarqube Scanner
+
+
+How to install it?
+
+
+
+How to install SonarQube in Linux?
+=========================================
+Step 1 - Install JAVA
+$ sudo yum list installed
+$ sudo yum list installed | grep java
+$ sudo yum remove <<all java7&8>
+$ yum install java-11-openjdk-devel
+$ systemctl stop firewalld
+$ systemctl disable firewalld
+
+Step 2 - Download and Install and run SonarQube server
+$ yum install wget unzip -y
+$ su centos1
+$ cd
+$ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.4.1.35646.zip
+$ unzip sonarqube-8.4.1.35646.zip
+$ mv sonarqube-8.4.1.35646 sonarqube-server
+$ cd sonarqube-server/bin/linux-x86-64
+$ ./sonar.sh start
+$ ./sonar.sh status
+
+
+# https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+Step 3 - Download and Install Scanner
+$ cd 
+$ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.5.0.2216-linux.zip
+$ unzip sonar-scanner-cli-4.5.0.2216-linux.zip
+$ cd sonar-scanner-cli-4.5.0.2216-linux/bin
+# Modify a file sonar-scanner.properties under conf dir
+### Copy a FULL PATH OF SCANNER == Make a FULL PATH OF SCANNER
+C:\tools\sonarqube\scanner\sonar-scanner-cli-4.5.0.2216-windows\bin\sonar-scanner.bat
+
+
+Step 4 - Clone git repo
+$ cd 
+$ git clone https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+$ mv java-sonarqube-helloworld-src src
+$ cd src
+### Change Projetname - key if you want it in sonar-project.properties
+
+#### RUN a FULL PATH OF SCANNER on the SOURCE CODE where sonar-project.properties
+
+
+http://13.235.113.166:9000/
+admin
+admin
+
+
+
+
+
+
+
+
+
+
+How to install it?
+
+
 
 
 
