@@ -1,0 +1,130 @@
+http://3.6.37.72:9000/
+======================================
+What is Jenkins?
+	CI tool.
+	Cont Integration
+	Release
+		Jenkins Community - FREE
+		Jenkins Enterprise
+		Blue Ocean
+		Jenkins X
+	Dev in Java
+	Community Driven
+	Based on the plugins
+
+What is CI?
+-------------------
+Auto Build --> Auto Testing
+---------------------------
+	Imm Feedback
+
+PLAN -> Code -> Review -> Build -> UT -> Package -> Archive -> Dep2QA -> AT -> CC ->
+----------------------------------------------------------------------------------------
+Jira -> Git -> SonarQube -> Maven -> Junit -> Jar -> Artifactory -> Ansibnle -> Selen -> jacoco
+---------------------------------------------------------------------------------------------
+ARCH -> DEV --> DEV   --> BR --> DEV -> BR ---> BR ---> QA --> QA --> Mgmt
+------------------------------------------------------------------------------------------------
+				integ 			
+					All Teams + All Tools + All Phases
+					==================================
+						Continously
+---------------------------------------------------------------------------------------
+							ALL PASS ---> Release (Cont Delivery)
+							Failed --> CI
+---------------------------------------------------------------------------------------------------
+					???
+					JENKINS
+						Automated Rep Tasks
+						Schedule
+						Feedback
+						Dashboard
+						Integ all tools
+
+====================================================================
+Other tools
+-----------------------------
+Bamboo
+Teamcity
+TravisCI
+UbUild
+GitlabCI
+GithubCI
+
+
+Jenkins Arch? How Jenkins Works?
+===============================================
+
+How to install it?
+=======================================
+https://devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+
+http://3.6.37.72:8080/
+rajesh
+rajesh123
+
+=======================================
+===================================================================
+===================================================================
+Q1. What is your tech?
+		JAVA			version		Installed in Agent?
+		DOTnet			version		Installed in Agent?
+		PYTHOn			version		Installed in Agent?
+
+Q2. Where is the Source Code?
+		git			userbranch = path - user - password - Tools is installed in Agent?
+		perforce		branch = path - user - password - Tools is installed in Agent?
+		tfs			branch = path - user - password - Tools is installed in Agent?
+		svn			branch = path - user - password - Tools is installed in Agent?
+		
+Q3. When you want this build to be triggers?
+		hourly
+
+Q4. What is your builder?
+	ant		which target?			- Tools is installed in Agent?	
+	maven		which goal?			- Tools is installed in Agent?
+	gradle		which task?			- Tools is installed in Agent?
+	msbuild		which target?			- Tools is installed in Agent?
+	bash		which script or commands	- Tools is installed in Agent?	
+	batch		which script or commands	- Tools is installed in Agent?
+Q5. Where you want to send Feedback?
+		Email.
+
+
+Q1. What is your tech?
+JAVA
+Q2. Where is the Source Code?
+git - 
+https://github.com/devops-school/helloworld-java-maven
+
+Q3. When you want this build to be triggers?
+		hourly
+
+Q4. What is your builder?
+	maven - compile
+
+Q5. Where you want to send Feedback?
+		Email.
+
+rajesh@devopsschool.com
+
+https://github.com/devops-school/helloworld-java-ant
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
