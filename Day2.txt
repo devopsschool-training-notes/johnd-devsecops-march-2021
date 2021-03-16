@@ -130,6 +130,30 @@ http://3.6.37.72:8080/job/Rajeshk/job/Compile/build?delay=0sec
 curl -X POST --user rajesh:115b70af3415a6ea0310c306d1b260da7d http://3.6.37.72:8080/job/Rajeshk/job/Compile/build?delay=0sec
 
 
+=============================================================================
+=============================================================================
+Integration	
+	- Know the tools		DONE
+	- Install a Plugins		DONE
+	- Config a Plugins		DONE
+	- Use a Integ in Jobs		DONE
+	
+http://3.6.37.72:9000
+admin
+admin
+https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
+=============================================================================
+=============================================================================
+Imm Feedback
+		Email
+			Mailer Plugin
+			Email Extension Plugin
+			
+		Chat
+	
+		Dashboard
+			Build Pipeline
 
 
 
