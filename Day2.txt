@@ -112,6 +112,28 @@ https://github.com/devops-school/helloworld-java-ant
 ----
 
 
+============================================================================
+Scheduling
+======================================================
+@Fixed Time				== Build periodically
+@Fixed time But Only if SCM changes	== Poll SCM
+Using Any Script from Remote		== Trigger builds remotely (e.g., from scripts)
+Trigger if push has happend in SCM
+https://www.devopsschool.com/blog/how-to-build-when-a-change-is-pushed-to-github-in-jenkins/
+
+Trigger This job if Another Job has been completed	== Build after other projects are built
+
+Trigger other job from this job
+
+http://3.6.37.72:8080/job/Rajeshk/job/Compile/build?delay=0sec
+
+curl -X POST --user rajesh:115b70af3415a6ea0310c306d1b260da7d http://3.6.37.72:8080/job/Rajeshk/job/Compile/build?delay=0sec
+
+
+
+
+
+
 
 
 
