@@ -13,3 +13,24 @@ Chrome Webdriver - https://chromedriver.chromium.org/downloads
 c:/tools/jdk
 c:/tools/selenium-client
 c:/tools/selenium-driver
+
+
+Working
+===================
+javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
