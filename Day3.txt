@@ -22,6 +22,133 @@ java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
 
 
 
+# Create HUB
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+----
+C:\tools\selenium\grid>java -jar selenium-server-standalone-3.141.59.jar -role hub
+17:09:20.992 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+17:09:21.310 INFO [GridLauncherV3.lambda$buildLaunchers$5] - Launching Selenium Grid hub on port 4444
+2020-12-30 17:09:22.441:INFO::main: Logging initialized @2357ms to org.seleniumhq.jetty9.util.log.StdErrLog
+17:09:25.599 INFO [Hub.start] - Selenium Grid hub is up and running
+17:09:25.606 INFO [Hub.start] - Nodes should register to http://192.168.0.105:4444/grid/register/
+17:09:25.608 INFO [Hub.start] - Clients should connect to http://192.168.0.105:4444/wd/hub
+
+Verify Console Access - 
+http://192.168.1.104:4444/grid/console
+
+
+# Create Node
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register/ -nodeConfig node.json
+
+C:\tools\selenium\grid>java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.0.105:4444/grid/register/ -nodeConfig node.json
+17:13:21.117 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+17:13:21.411 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+2020-12-30 17:13:24.235:INFO::main: Logging initialized @3984ms to org.seleniumhq.jetty9.util.log.StdErrLog
+17:13:24.890 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+17:13:25.097 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+17:13:25.098 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+17:13:26.310 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+17:13:27.095 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://192.168.0.105:4444/grid/register
+17:13:28.368 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+
+Verify Node @ HUb - 
+http://192.168.1.104:4444/grid/console
+http://192.168.1.104:4444/grid/console
+
+
+
+
+================================
+
+
+javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+
+
+# Create HUB
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+----
+C:\tools\selenium\grid>java -jar selenium-server-standalone-3.141.59.jar -role hub
+17:09:20.992 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+17:09:21.310 INFO [GridLauncherV3.lambda$buildLaunchers$5] - Launching Selenium Grid hub on port 4444
+2020-12-30 17:09:22.441:INFO::main: Logging initialized @2357ms to org.seleniumhq.jetty9.util.log.StdErrLog
+17:09:25.599 INFO [Hub.start] - Selenium Grid hub is up and running
+17:09:25.606 INFO [Hub.start] - Nodes should register to http://192.168.0.105:4444/grid/register/
+17:09:25.608 INFO [Hub.start] - Clients should connect to http://192.168.0.105:4444/wd/hub
+
+Verify Console Access - 
+http://192.168.1.104:4444/grid/console
+
+
+# Create Node
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register/ -nodeConfig node.json
+
+C:\tools\selenium\grid>java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.0.105:4444/grid/register/ -nodeConfig node.json
+17:13:21.117 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+17:13:21.411 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+2020-12-30 17:13:24.235:INFO::main: Logging initialized @3984ms to org.seleniumhq.jetty9.util.log.StdErrLog
+17:13:24.890 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+17:13:25.097 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+17:13:25.098 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+17:13:26.310 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+17:13:27.095 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://192.168.0.105:4444/grid/register
+17:13:28.368 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+
+Verify Node @ HUb - 
+http://192.168.1.104:4444/grid/console
+http://192.168.1.104:4444/grid/console
+
+
+
+
+================================
+
+
+javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
