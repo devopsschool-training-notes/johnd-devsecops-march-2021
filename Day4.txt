@@ -1,0 +1,59 @@
+==================
+What is jacoco?
+============================
+	Code Coverage tool
+
+What is Code Coverage?
+==========================
+	is a process to TEST your TEST.
+	is a process to find Percent of COVERAGE of Code by Testing Process.
+
+test Coverage
+===================
+How much % of the test cases you have run on the code.
+
+================================================================================
+Tools
+
+JAVA		JACOCO		COBERTURA
+DOTNET		NCOVER
+PYTHON		Pycover
+=========================================================
+JACOCO	Vs COBERTURA
+-----------------------------
+Offline		Offline Instrumentations
+&
+online
+Instrumentations
+- Dynamic
+
+
+What is JACOCO	
+-------------------	
+	Code Coverage tool
+	For Java
+	Free
+	Open Source
+
+JACOCO Workflow
+==============================
+Install Jacoco in JVM -> AT -> Generate Exec data --> Merge all exec data -- Generate Reports- > Analyze
+ 
+Demo:
+============================
+Jacoco using Maven and Java with JUNIT
+===========================================
+
+
+- JAVA - 1.8
+		- JAVA_HOME
+		- JAVA_HOME/bin into PATH
+- Maven - Latest
+		- maven_home/bin into PATH
+
+c:/tools/
+git clone Sample - https://github.com/scmgalaxy/jacoco-maven-unittestv2
+mvn test
+
+
+	
